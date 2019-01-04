@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('admin/test', 'Admin\UserController@test');
+Route::get('admin/test', 'Admin\UserController@renew');
