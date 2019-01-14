@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: mrrightli
  * Date: 2019/1/4
- * Time: 4:26 PM
+ * Time: 6:03 PM
  */
 
 namespace Geek\classes\Bill;
@@ -11,7 +11,7 @@ namespace Geek\classes\Bill;
 
 use Geek\contracts\Bill\BillingNotifier;
 
-class SmsNotifier implements BillingNotifier
+class EmailBillingNotifier implements BillingNotifier
 {
     public function notify(array $user, $amount)
     {

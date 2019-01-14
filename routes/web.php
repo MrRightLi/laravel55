@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('admin/test', 'Admin\UserController@renew');
+Route::get('/admin/user/renew', 'Admin\UserController@renew');
+Route::get('/admin/user/renew2', 'Admin\UserController@renew2');
+Route::get('/admin/user/test', 'Admin\UserController@test');
