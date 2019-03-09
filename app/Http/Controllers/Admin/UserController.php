@@ -47,6 +47,25 @@ class UserController extends Controller
 
     public function test()
     {
-        return view('test', ['message' => 'Hello Vue']);
+        \Swoole\Runtime::enableCoroutine();
+
+        go(function ()
+        {
+            sleep(1);
+            echo "b";
+        });
+
+        go(function ()
+        {
+            sleep(2);
+            echo "c";
+        });
+
+
+        return $user = [
+            'LeBron',
+            'Tracy',
+            'Kobe',
+        ];
     }
 }
