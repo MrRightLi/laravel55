@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Demo;
 
 use Geek\classes\Bill\SmsNotifier;
 use Geek\classes\Bill\StripeBiller;
